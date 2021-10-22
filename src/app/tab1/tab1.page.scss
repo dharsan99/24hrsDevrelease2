@@ -1,0 +1,59 @@
+
+.dot {
+    margin:15px;
+    margin-top: 0 !important;
+    height: 80px;
+    width: 70%;
+    background-color: #b4e8e3
+    ;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 5.5);
+  }
+  .count{
+      padding: 25px;
+      text-align: center;
+      color: #5C5C5C;
+      font-size: 25px;
+  }
+  .views{
+      margin-top:  -10px !important;
+      text-align: center;
+      color: #5C5C5C;
+  }
+  .offer-btn{
+    margin:15px;
+    background-color: #50C7C8
+    ;
+    border:1px solid #fff;
+  }
+  .myproducts-btn{
+    margin:15px;
+    background-color: #50C7C8
+    ;
+    border:1px solid #fff;
+    border-radius: 5px;
+  }
+  ion-list{
+    background-color: #ebf9f9 !important;
+  }
+  ion-item{
+    background-color: #ebf9f9 !important;
+  }
+
+  ion-content {
+    // background-color:#FFD833 !important;
+    background: linear-gradient(to bottom, #8cdbe2
+    0%, #d1f2e7
+    100%) !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }
+
+ 
+  
+  

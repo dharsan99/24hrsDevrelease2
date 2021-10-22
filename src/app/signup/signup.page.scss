@@ -1,0 +1,54 @@
+.location{
+   color:#171717;
+   font-size: 12px;
+   margin:5px;
+}
+.get-started{
+font-size: 20px;
+color: #171717;
+margin:8px;
+}
+.create-account{
+font-size: 10px;
+margin:8px;
+}
+.tearmsAndCondition{
+    font-size:10px;
+    margin:5px;
+}
+// .input-field{
+//     margin-left :-10px;
+   
+// }
+.signup-btn{
+    border-radius: 20px !important;
+    width: 90%;
+    height:35px;
+    background-color: #29C17E;
+    border:1px solid #fff;
+}
+.tearmsAndCondition{
+    font-size:10px;
+}
+ion-label{
+    font-size:12px  !important;
+    color:#6E7989;
+}
+.condition{
+    font-size: 12px;
+    color:gray;
+    padding: 15px;
+}
+
+ion-content {
+    // background-color:#FFD833 !important;
+    background: linear-gradient(to bottom, #8cdbe2
+    0%, #d1f2e7
+    100%) !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }

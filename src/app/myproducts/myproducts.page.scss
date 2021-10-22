@@ -1,0 +1,69 @@
+.myproduct-div{
+    background-color: #fff;
+    border:1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    width:96% !important;
+    margin:5px;
+    
+  }
+  .myproduct-div {
+    background: linear-gradient(to bottom, #8cdbe2
+    0%, #d1f2e7
+    100%) !important;
+    border:1px solid #8cdbe2;
+    box-shadow:none;
+  }
+  img{
+    margin-left: 10px !important;
+    height:80px;
+    width: 95px;
+  }
+.card{
+    background-color: #ebf9fa
+
+    ;
+    border:1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    width:96% !important;
+    margin:5px;
+  }
+  span{
+      font-size: smaller;
+  }
+  .price{
+      margin-top: -2px !important;
+      text-align: center;
+  }
+  .product-name{
+    margin-top: 1px !important;
+    margin-left: 15% !important;
+  }
+  #cross{
+      cursor: pointer;
+      margin-top:20px;
+  }
+  #cross:hover{
+      color:red;
+  }
+  .exit-btn{
+    width: 70%;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #50C7C8;
+    border:1px solid #fff;
+    color: #fff;
+  }
+  ion-content {
+    // background-color:#FFD833 !important;
+    background: linear-gradient(to bottom, #8cdbe2
+    0%, #d1f2e7
+    100%) !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }

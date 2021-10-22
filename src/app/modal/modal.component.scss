@@ -1,0 +1,38 @@
+#card{
+    background-color: transparent !important;
+border-radius: 0px !important;
+border:1px solid #fff;
+}
+.items{
+    align-items: center !important;
+    margin:5px !important;
+}
+.gallary-btn, .upload-btn{
+    font-size: smaller;
+    margin: 6px;
+   
+    background-color:#50C7C8;
+    border:1px solid #50C7C8;
+    
+}
+#close{
+    color:red;
+    cursor: pointer;
+}
+#close:hover{
+    color: rgb(126, 2, 2);
+}
+
+ion-content {
+    background-color:#fff
+    !important;
+    // background: linear-gradient(to bottom, #8cdbe2
+    // 0%, #d1f2e7
+    // 100%) !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }

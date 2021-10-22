@@ -1,0 +1,12 @@
+ion-content {
+    // background-color:#FFD833 !important;
+    background: linear-gradient(to bottom, #8cdbe2
+    0%, #d1f2e7
+    100%) !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }

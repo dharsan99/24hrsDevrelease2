@@ -1,0 +1,47 @@
+.store-name{
+    font-size: 20px;
+    margin:10px;
+}
+.getstarted{
+    font-size: 14px;
+    color:#6E7989;
+    margin:10px;
+
+}
+.tearmsAndCondition{
+    font-size:10px;
+    margin:12px;
+    padding:10px;
+}
+.continue-btn{
+    background-color: #29C17E;
+    border:1px solid #fff;
+    margin: 10px;
+    
+}
+.profile-sts{
+    font-size: 13px;
+    color:#334D6E;
+    margin:10px;
+}
+.progress{
+    margin:5px;
+    height:10px;
+    
+}
+.progress-bar{
+    background-color:#29C17E;
+    font-size: smaller;
+}
+ion-content {
+    // background-color:#FFD833 !important;
+    background: linear-gradient(to bottom, #8cdbe2
+    0%, #d1f2e7
+    100%) !important;
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  }

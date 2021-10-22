@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-menu-button style="margin-top:15px;color:#fff" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <div class="row">
+      <div class="col-5">
+        <h4 style="color: #fff;margin-top:25px">24hrs</h4>
+      </div>
+      <div class="col-7" style="text-align: right;width: 90%;margin-top: -40px;">
+        <svg style="margin:5px;" width="20" height="20" viewBox="0 0 20 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.2998 12.5863H13.3974L13.0775 12.2779C14.3299 10.8187 14.9685 8.93097 14.8587 7.01111C14.749 5.09124 13.8996 3.28856 12.489 1.98152C11.0785 0.674474 9.21659 -0.0352438 7.29394 0.00134777C5.3713 0.0379394 3.53754 0.817948 2.17778 2.17771C0.818015 3.53748 0.0379393 5.37125 0.00134789 7.2939C-0.0352436 9.21655 0.674402 11.0786 1.98144 12.4891C3.28848 13.8996 5.09129 14.7489 7.01115 14.8586C8.93101 14.9683 10.8187 14.33 12.2779 13.0775L12.5864 13.3974V14.2998L18.298 20L20 18.298L14.2998 12.5863ZM7.44594 12.5863C6.42926 12.5863 5.43548 12.2849 4.59014 11.72C3.7448 11.1552 3.08585 10.3523 2.69678 9.41302C2.30772 8.47373 2.20589 7.44016 2.40423 6.44301C2.60258 5.44586 3.09231 4.52992 3.81121 3.81102C4.53011 3.09211 5.44592 2.60259 6.44306 2.40424C7.44021 2.20589 8.47391 2.30765 9.4132 2.69672C10.3525 3.08579 11.1553 3.74468 11.7201 4.59002C12.285 5.43536 12.5864 6.42921 12.5864 7.44589C12.5873 8.1212 12.4551 8.79006 12.197 9.41414C11.939 10.0382 11.5604 10.6052 11.0829 11.0827C10.6054 11.5602 10.0381 11.9389 9.41404 12.1969C8.78996 12.4549 8.12124 12.5872 7.44594 12.5863Z"
+            fill="white" />
+        </svg>
+        <svg style="margin:5px;text-align:right" width="16" height="20" viewBox="0 0 16 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.0002 0C7.11654 0 6.4002 0.716344 6.4002 1.6V1.80156C3.63963 2.51189 1.5998 5.01775 1.5998 8.00003V13.6H2C0.895431 13.6 0 14.4955 0 15.6V15.8C0 16.3523 0.447715 16.8 1 16.8H15C15.5523 16.8 16 16.3523 16 15.8V15.6C16 14.4955 15.1046 13.6 14 13.6H14.3998V8.00003C14.3998 5.01803 12.3604 2.51237 9.60019 1.80176V1.6C9.60019 0.716344 8.88385 0 8.0002 0ZM5.5998 17.6C5.5998 18.9255 6.67432 20 7.9998 20C9.32529 20 10.3998 18.9255 10.3998 17.6H5.5998Z"
+            fill="white" />
+        </svg>
+      </div>
+    </div>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="bg-class" [fullscreen]="true">
+  <div class="container">
+    
+    <div class="signin-div mt-4 ">
+      
+      <div class="select mt-3" style="margin-left: 5%;">
+        <p class="mx-2 mt-2" >Category :</p>
+        <select>
+          <option class="option mx-2" id="cat-dropdwon" value="1">Grocery</option>
+          <option value="2">Pharmacy</option>
+          <option value="3">Vegetables</option>
+          <option value="3">Household</option>
+          <option value="3">Meat</option>
+
+        </select>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-6 ">
+          <p class="col-6 mx-4" >Product    :</p>
+        </div>
+        <div class="col-6">
+          <input type="text" style="margin-left:-18px;" value="" id="offer" name="fname">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-5 ion-text-center">
+          <span style="margin-left:-25%">Cost:</span>
+          <input class="cost mx-4" id="offer" value="" type="text">
+        </div>
+        <div class="col-7">
+          <div class="select" id="kg-dropdwon">
+            <select>
+              
+              <option class="option" value="1">Kg</option>
+              <option value="2">G</option>
+              <option value="3">L</option>
+              <option value="3">Ml</option>
+            </select>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="row mt-5" style="padding-left: 10px;">
+        <div class="col-6">
+          <p class="edit-name ion-text-center">Product picture :</p>
+        </div>
+        <div class="col-6 ">
+
+          <svg id="upload" (click)="upload()" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.8671 9.57033C16.3238 9.56198 15.8766 9.99564 15.8683 10.5389L15.8274 13.2006C15.7964 15.2139 14.1393 16.8209 12.126 16.79L5.6448 16.6904C3.6315 16.6595 2.02449 15.0023 2.05543 12.989L2.09633 10.3273C2.10468 9.78399 1.67103 9.3368 1.12774 9.32845C0.58445 9.3201 0.137258 9.75375 0.128909 10.297L0.0319803 16.6041C0.0250558 17.1561 0.224818 17.6882 0.587446 18.0842C0.950075 18.4801 1.4461 18.7078 1.96739 18.7175L15.7393 18.9291C16.2607 18.9355 16.7635 18.7231 17.1381 18.3385C17.5127 17.9539 17.7287 17.4282 17.7388 16.8763L17.8357 10.5692C17.8441 10.0259 17.4104 9.57868 16.8671 9.57033Z" fill="#252525"/>
+            <path d="M8.05645 6.65486C8.07088 5.71601 6.91586 5.25698 6.25942 5.92833C5.85434 6.34262 5.17813 6.33811 4.78681 5.9108C4.4254 5.51614 4.43476 4.90802 4.80814 4.52467L6.49955 2.78807C7.93361 1.31569 10.3107 1.35222 11.6989 2.86797L13.3361 4.65572C13.6975 5.05038 13.6882 5.65849 13.3148 6.04186C12.9106 6.45694 12.2345 6.44067 11.8424 6.01413C11.2069 5.32292 10.0383 5.74625 10.0239 6.68509L9.92424 13.1678C9.91589 13.7111 9.4687 14.1447 8.92541 14.1364C8.38212 14.128 7.94847 13.6808 7.95682 13.1375L8.05645 6.65486Z" fill="#252525"/>
+            </svg>
+            
+
+        </div>
+      </div>
+
+      <div class="form-group ">
+        <label style="margin-left: 13px;" for="exampleFormControlTextarea1">Problem Description :</label>
+        <textarea style="background-color: #ebf9f9;" class="form-control" id="exampleFormControlTextarea1"
+          rows="3"></textarea>
+      </div>
+
+      <div style="width:100%; text-align: center;">
+        <button (click)="addproduct()" type="button" class="btn btn-primary  addproduct-btn mt-2">Add Product </button>
+      </div>
+    </div>
+  </div>
+
+
+</ion-content>
