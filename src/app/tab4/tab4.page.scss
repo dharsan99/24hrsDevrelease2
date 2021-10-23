@@ -1,3 +1,7 @@
+
+*{
+  color:#5C5C5C;
+}
 .card{
     background-color: #ebf9fa
 
@@ -18,6 +22,7 @@
     background-color: darkturquoise !important;
     border:1px solid #fff;
     border-radius: 5px;
+    color: #fff;
   }
   .product-name{
     margin-top: -10px !important;
@@ -54,14 +59,8 @@ input[type=text] {
   margin:5px;
 }
 #card{
-  position: absolute;
-  background-color: #ebf9f9
-  ;
-  top:15%;
-  width: 90vw;
+  background-color: #ebf9f9;
   border-radius: 5px;
-  
-  
 }
 #blurred {
   -webkit-filter: blur(2px);

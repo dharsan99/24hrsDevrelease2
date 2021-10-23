@@ -24,7 +24,8 @@ margin:8px;
     border-radius: 20px !important;
     width: 90%;
     height:35px;
-    background-color: #29C17E;
+    background-color: darkturquoise;
+    color:#fff;
     border:1px solid #fff;
 }
 .tearmsAndCondition{
@@ -34,15 +35,20 @@ ion-label{
     font-size:12px  !important;
     color:#6E7989;
 }
+ion-item{
+    --background: transparent !important;
+}
 .condition{
     font-size: 12px;
     color:gray;
     padding: 15px;
 }
-
+.container{
+    margin-top:95px;
+}
 ion-content {
     // background-color:#FFD833 !important;
-    background: linear-gradient(to bottom, #8cdbe2
+    background: linear-gradient(to bottom, darkturquoise
     0%, #d1f2e7
     100%) !important;
     --offset-bottom: auto!important;

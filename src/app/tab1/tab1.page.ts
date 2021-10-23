@@ -19,12 +19,16 @@ export class Tab1Page {
     this.router.navigate(['/tabs/tab4'])
   }
 
-  selectedCar: number;
+  // selectedCar: number;
 
-  cars = [
-      { id: 1, name: 'Volvo' },
-      { id: 2, name: 'Saab' },
-      { id: 3, name: 'Opel' },
-      { id: 4, name: 'Audi' },
-  ];
+  // cars = [
+  //     { id: 1, name: 'Volvo' },
+  //     { id: 2, name: 'Saab' },
+  //     { id: 3, name: 'Opel' },
+  //     { id: 4, name: 'Audi' },
+  // ];
+
+  select(){
+    
+  }
 }

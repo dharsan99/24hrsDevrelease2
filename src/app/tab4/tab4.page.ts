@@ -11,7 +11,7 @@ export class Tab4Page {
   constructor(private router: Router, route: ActivatedRoute) {
     route.params.subscribe(val => {
       this.isvisible = false;
-      this.blurred = false;
+      this.cardVisible =true;
       // put the code from `ngOnInit` here
      
     });
@@ -22,19 +22,18 @@ export class Tab4Page {
     
    
   }
-
+  cardVisible:any = true;
   isvisible:any = false;
-  blurred:any = false;
-
+  
   addoffer(){
-    
+    this.cardVisible =false;
     this.isvisible = true;
-    this.blurred = true;
+    
   }
 
   
   confirm(){
+    this.cardVisible = true;
     this.isvisible = false;
-    this.router.navigate(['/tabs/tab4'])
   }
 }
