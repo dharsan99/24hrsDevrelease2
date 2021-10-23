@@ -5,6 +5,9 @@
 input{
     background-color: transparent;
 }
+input:focus{
+    background-color: transparent;
+}
 ion-content {
     // background-color:#FFD833 !important;
     background: linear-gradient(to bottom, darkturquoise
