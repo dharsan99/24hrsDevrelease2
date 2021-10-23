@@ -27,13 +27,13 @@
 
 </ion-header>
 
-<ion-content class="bg-class" >
+<ion-content class="bg-class">
   <div class="container">
     <div style="width: 100%; text-align: right;">
       <button (click)="addoffer()" class="btn btn-success btn-sm  offer-btn mt-1">+ Add Offer</button>
     </div>
 
-    <div class=" card"  >
+    <div class=" card">
       <div class="row">
         <div class="col-4 mt-4">
           <img src="assets/onion.PNG" alt="">
@@ -127,12 +127,12 @@
       </div>
     </div>
 
-    <div class=" card"  >
+    <div class=" card">
       <div class="row">
         <div class="col-4 mt-4">
           <img src="assets/onion.PNG" alt="">
           <h6 class="product-name">Onion</h6>
-          <ion-badge class="badge" style="color:#fff;background-color: #50C7C8;"slot="start">1KG</ion-badge>
+          <ion-badge class="badge" style="color:#fff;background-color: #50C7C8;" slot="start">1KG</ion-badge>
         </div>
         <div class="col-8 mt-3">
           <h6>Number of views: <span> 10</span></h6>
@@ -173,8 +173,8 @@
         </div>
       </div>
     </div>
-    
-    <div class=" card"  >
+
+    <div class=" card">
       <div class="row">
         <div class="col-4 mt-4">
           <img src="assets/onion.PNG" alt="">
@@ -222,69 +222,89 @@
     </div>
 
     <div *ngIf="isvisible" class="card mt-3" class="w3-container w3-center w3-animate-top" id="card">
-      <div class="row mt-5">
-        <div class="select">
-          <select>
-            <option class="option" value="1">Grocery</option>
-            <option value="2">Pharmacy</option>
-            <option value="3">Vegetables</option>
-            <option value="3">Household</option>
-            <option value="3">Meat</option>
-            
-          </select>
-        </div>
+      <div class="row" >
 
-        <div class="select mt-2">
-          <select>
-            <option class="option" value="1">Grocery</option>
-            <option value="2">Pharmacy</option>
-            <option value="3">Vegetables</option>
-            <option value="3">Household</option>
-            <option value="3">Meat</option>
-            
-          </select>
+        <div class="col-12 ion-text-left " style="margin-top: -15px;">
+          <svg (click)="confirm()" style="color: black;margin-top:-8px;cursor:pointer" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>
+        </div>
+        <div class="col-12">
+          <h5 class="name  ion-text-center" style="color:#676767;" ><b>Add Your Offer</b></h5>
+          <p class="name mt-3 ion-text-left" style="color:#404040;" >Category :</p>
+        </div>
+        <div class="col-12">
+          <div class="select" id="kg-dropdwon">
+            <select>
+
+              <option value="2">Grocery</option>
+              <option value="3">Pharmacy</option>
+              <option value="3">Vegetables</option>
+              <option value="3">Meat</option>
+              <option value="3">Hardwares</option>
+            </select>
+          </div>
         </div>
       </div>
 
-      <div class="row mt-2">
-        <div class="col-6 ">
-          <p class="col-6 ion-text-right">offer:</p>
+      <div class="row" >
+        <div class="col-12 ion-text-left">
+          <p class="name mt-2" style="color:#404040;" >Product:</p>
+        </div>
+        <div class="col-12">
+          <div class="select" id="kg-dropdwon">
+            <select>
+
+              <option value="2">Grocery</option>
+              <option value="3">Pharmacy</option>
+              <option value="3">Vegetables</option>
+              <option value="3">Meat</option>
+              <option value="3">Hardwares</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4" >
+        <div class="col-6">
+          <p class="edit-name ion-text-left" style="color:#404040;" >Offer:</p>
         </div>
         <div class="col-6">
-          <input type="text" value="10%" id="offer" name="fname">
+          <input type="text" id="edit-field" value="10">
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-6 ion-text-center">
-          <p>Total Cost :</p>
+      <div class="row" >
+        <div class="col-6">
+          <p class="edit-name ion-text-left" style="color:#404040;" >Total Cost :</p>
         </div>
         <div class="col-6">
-          <input type="text" value="130" id="offer" name="fname">
+          <input type="text" id="edit-field" value="130">
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-6 ion-text-center">
-          <p>Offer Price :</p>
+      <div class="row" >
+        <div class="col-6">
+          <p class="edit-name ion-text-left" style="color:#404040;" >Offer Price :</p>
         </div>
         <div class="col-6">
-          <input type="text" value="117" id="offer" name="fname">
+          <input type="text" id="edit-field" value="115">
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-6 ion-text-center">
-          <p>Offer Time :</p>
+      <div class="row" >
+        <div class="col-6">
+          <p class="edit-name ion-text-left" style="color:#404040;" >Offer Time :</p>
         </div>
         <div class="col-6">
-          <input type="text" value="2.00.00" id="offer" name="fname">
+          <input type="text" id="edit-field" value="2:00:00">
         </div>
       </div>
 
-      <div class="form-group" >
-        <label style="margin-left: 5px;" for="exampleFormControlTextarea1">Problem Description  :</label>
-        <textarea style="background-color: #ebf9f9;" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <div class="form-group mt-3 ion-text-center">
+        <label for="exampleFormControlTextarea1" style="color:#404040;" > Description </label>
+        <textarea style="background-color: #ebf9f9;margin-top: 5px;" class="form-control" id="exampleFormControlTextarea1"
+          rows="3"></textarea>
       </div>
 
       <div style="width:100%; text-align: center;">

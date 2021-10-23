@@ -127,7 +127,7 @@
       
   }
   .new-background-color{
-    --background: #84d8e3
+    --background: darkturquoise
     !important;
 }
 
@@ -156,7 +156,7 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 18em;
+  width: 90%;
   height: 3em;
   border-radius: .25em;
   overflow: hidden;
@@ -171,15 +171,15 @@ select::-ms-expand {
   top: 0;
   right: 0;
   padding: 1em;
-  background-color: #8cdbe2;
-  color:#fff;
+  background-color: transparent;
+  color:darkturquoise;
   transition: .5s all ease;
   pointer-events: none;
   border-radius: 2px;
 }
 /* Transition */
 .select:hover::after {
-  color: #50C7C8;
+  color: #121212;
 }
 
 /* Other styles*/
@@ -198,3 +198,19 @@ a {
   border-radius: .25em;
   background: white;
 }
+
+select option:hover {
+  --background:darkturquoise !important;
+  color: #fff;
+  cursor: pointer;
+}
+option:hover {
+  background-color: yellow;
+}
+select:focus > option:checked { 
+  cursor: pointer;
+  background-color: darkturquoise;
+}
+
+option:hover {
+  cursor: pointer;}

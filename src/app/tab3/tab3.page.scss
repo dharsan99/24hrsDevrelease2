@@ -8,7 +8,7 @@
     border-radius: 5px !important;
     width: 50%;
     height:35px;
-    background-color: #50C7C8;
+    background-color: darkturquoise;
     border:1px solid #fff;
     margin:5px;
 }
@@ -33,33 +33,27 @@ input[type=text] {
   #kg-dropdwon {
     position: relative;
     display: flex;
-    width: 10em;
+    width: 90%;
     height: 3em;
     border-radius: .25em;
     overflow: hidden;
-    margin-left: 0%;
+    margin-left: 2%;
   
   }
-  #cat-dropdwon {
-    /* Reset Select */
-    appearance: none;
-    outline: 0;
-    border: 0;
-    box-shadow: none;
-    /* Personalize */
-    flex: 1;
-    padding: 0 1em;
-    color: #5C5C5C;
-    background-color: #e3f6fa;
-    background-image: none;
-    cursor: pointer;
-    width: 20% !important;
-    border-radius: 2px;
+  .select {
+    position: relative;
+    display: flex;
+    width: 97%;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+   
+  
   }
   
 ion-content {
     // background-color:#FFD833 !important;
-    background: linear-gradient(to bottom, #8cdbe2
+    background: linear-gradient(to bottom, darkturquoise
     0%, #d1f2e7
     100%) !important;
     --offset-bottom: auto!important;
