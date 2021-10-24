@@ -3,10 +3,11 @@
 <ion-content class="bg-class">
 <div class="container">
   <div class="row title">
-    <div class="col-4 icon mt-2 ">
-     <img src="assets/model.png" alt="">
-        
+    <div class="col-4">
+      <!-- <img src="assets/model.png" alt=""> -->
     </div>
+     
+        
     <div class="col-8 ">
       <span class="welcome">Welcome to</span><br>
       <span class="seller"><b>24hrs Seller</b></span>
@@ -18,18 +19,24 @@
       <div class="col-6 signin">
         Sign in
       </div>
-      <div class="col-6 signup">
+      <div style="cursor: pointer;" (click)="signupPage()" class="col-6 signup">
         Sign up
       </div>
     </div>
     <p class="signin-seller"><b>Sign in to 24hrs Seller</b></p>
     <p class="emailTo-continue">Enter email & password to continue</p>
 
-    <div class="form-group mb-4">
-      <input id="email" type="email" placeholder="Email" class="form-control form-control-underlined">
-    </div>
-    <div class="form-group mb-4">
-      <input id="password" type="email" placeholder="Password" class="form-control form-control-underlined">
+    <div class="input-field" >
+      <ion-item>
+        <ion-label position="floating">  <ion-icon name="mail"></ion-icon> EMAIL</ion-label>
+        <ion-input [(ngModel)]="signinemailid" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+          <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+        </svg> PASSWORD</ion-label>
+        <ion-input [(ngModel)]="signinpassword"> </ion-input>
+      </ion-item>   
     </div>
 
     <div class="row">
@@ -37,7 +44,7 @@
         Forgot password?
       </div>
       <div class="col-4">
-        <button class="btn btn-success btn-sm signin-btn mt-1">SIGNIN</button>
+        <button (click)="signin()" class="btn btn-success btn-sm signin-btn mt-1">SIGNIN</button>
       </div>
     </div>
 

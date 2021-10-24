@@ -43,5 +43,8 @@ export class AppComponent {
     this.router.navigate(['/support'])             
   }
 
+  logout(){
+    this.router.navigate(['/'])
+  }
   
 }

@@ -2,12 +2,14 @@
     background-color: darkturquoise;
     color:#fff;
 }
-input{
-    background-color: transparent;
+ion-label{
+    font-size:12px  !important;
+    color:#6E7989;
 }
-input:focus{
-    background-color: transparent;
+ion-item{
+    --background: transparent !important;
 }
+
 ion-content {
     // background-color:#FFD833 !important;
     background: linear-gradient(to bottom, darkturquoise

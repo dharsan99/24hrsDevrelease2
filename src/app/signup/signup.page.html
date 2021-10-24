@@ -17,26 +17,26 @@
         <ion-item>
           
           <ion-label position="floating">  <ion-icon name="mail"></ion-icon> EMAIL</ion-label>
-          <ion-input></ion-input>
+          <ion-input [(ngModel)]="emailid" ></ion-input>
          
         </ion-item>
     
         <ion-item>
           <ion-label position="floating"> <ion-icon name="person"></ion-icon> USER NAME</ion-label>
-          <ion-input></ion-input>
+          <ion-input [(ngModel)]="sellername"></ion-input>
          
         </ion-item>
     
         <ion-item>
           <ion-label position="floating"> <ion-icon name="call"></ion-icon>MOBILE</ion-label>
-          <ion-input  type="number"></ion-input>
+          <ion-input [(ngModel)]="mobilenumber" type="number"></ion-input>
         </ion-item>
     
         <ion-item>
           <ion-label position="floating"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
             <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
           </svg> PASSWORD</ion-label>
-          <ion-input> </ion-input>
+          <ion-input [(ngModel)]="password"> </ion-input>
         </ion-item>   
       </div>
 
@@ -50,9 +50,9 @@
        </div>
        
        <div style="width:100%; text-align: center;">
-        <button type="button" class="btn btn-primary  signup-btn mt-2">SIGN UP </button>
+        <button (click)="signup()" type="button" class="btn btn-primary  signup-btn mt-2">SIGN UP </button>
        </div>
-       <p class="condition" >Already have an account? <b style="color:#171717"> Sign in</b></p>
+       <p style="cursor: pointer;"(click)="signinPage()" class="condition" >Already have an account? <b style="color:#171717"> Sign in</b></p>
   
       
     </div>
