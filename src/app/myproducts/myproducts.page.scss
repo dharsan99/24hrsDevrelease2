@@ -5,13 +5,17 @@
     box-shadow: 2px 2px 2px 2px #ccc;
     width:96% !important;
     margin:5px;
+    -moz-box-shadow: 0 0 3px #ccc;
+-webkit-box-shadow: 0 0 3px #ccc;
+box-shadow: 0 0 3px #ccc;
     
   }
   .myproduct-div {
-    background: linear-gradient(to bottom, #8cdbe2
-    0%, #d1f2e7
-    100%) !important;
-    border:1px solid #8cdbe2;
+    // background: linear-gradient(to bottom, #8cdbe2
+    // 0%, #d1f2e7
+    // 100%) !important;
+    background-color: #fff;
+    border:1px solid #fff;
     box-shadow:none;
   }
   img{
@@ -20,7 +24,7 @@
     width: 95px;
   }
 .card{
-    background-color: #ebf9fa
+    background-color: #fff
 
     ;
     border:1px solid #fff;
@@ -51,15 +55,16 @@
     width: 70%;
     border-radius: 10px;
     margin: 10px;
-    background-color: darkturquoise;
+    background-color: #FF6000;
     border:1px solid #fff;
     color: #fff;
   }
   ion-content {
-    // background-color:#FFD833 !important;
-    background: linear-gradient(to bottom, #8cdbe2
-    0%, #d1f2e7
-    100%) !important;
+    background-color:#fff !important;
+    // background: linear-gradient(to bottom, #8cdbe2
+    // 0%, #d1f2e7
+    // 100%) !important;
+
     --offset-bottom: auto!important;
     --overflow: hidden;
     overflow: auto;

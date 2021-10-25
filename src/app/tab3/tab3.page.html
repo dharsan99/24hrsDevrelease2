@@ -29,45 +29,54 @@
 
 <ion-content class="bg-class" [fullscreen]="true">
   <div class="container">
-    
-    <div class="signin-div mt-4 ">
+   
+    <div *ngIf="isHidden" id="card" class="signin-div mt-4 ">
 
       <div class="row mt-3" style="padding: 10px;">
         <div class="col-12">
           <h5 class="name  ion-text-center" style="color:#676767;" ><b>Add Your Product</b></h5>
           <p class="name mt-2 ion-text-left" style="color:#404040;">Category :</p>
         </div>
+
         <div class="col-12 ">
           <div class="select" >
-            <select>
+            <select (change)="card()" [(ngModel)]="Category" placeholder="category">
+              <option value="" disabled selected>Select Your Category</option>
+              <option *ngFor="let cat of categoryList" value="{{cat.category}}">{{cat.category}}</option>
+              <option  style="background-color: #FF6000;" value="1">+ add new</option>
+            </select>
+          </div>
+        </div>
 
-              <option value="2">Grocery</option>
-              <option value="3">Pharmacy</option>
-              <option value="3">Vegetables</option>
-              <option value="3">Meat</option>
-              <option value="3">Hardwares</option>
+        <div class="col-12 mt-2">
+          <div class="select" >
+            <select (change)="card()" [(ngModel)]="subcategory" placeholder="category">
+              <option value="" disabled selected>Select Your Subcategory</option>
+              <option *ngFor="let cat of categoryList" value="{{cat.category}}">{{cat.category}}</option>
+              <option  style="background-color:#FF6000;color:#fff;" value="1">+ add new</option>
             </select>
           </div>
         </div>
   
           <div class="col-6 mt-3">
-            <p  class="name" style="color:#404040;" >Product    :</p>
+            <p  class="name" style="color:#404040;" >Product Name    :</p>
           </div>
           <div class="col-6 mt-2">
-            <input type="text"  value="Onion" id="offer" name="fname">
+            <input [(ngModel)]="productname" type="text" placeholder="Onion"  id="offer" >
         </div>
 
         <div class="col-6">
           <p class="name" style="color:#404040;">Cost:</p>
-          <input type="text"  value="100" id="offer" name="fname">
+          <input [(ngModel)]="cost" type="text"  placeholder="100" id="offer" >
         </div>
         <div class="col-6">
           <div class="select mt-4" id="kg-dropdwon">
-            <select> 
+            <select>
+              <option value="" disabled selected> Kg/g</option> 
               <option class="option" value="1">Kg</option>
               <option value="2">G</option>
               <option value="3">L</option>
-              <option value="3">Ml</option>
+              <option value="3">ml</option>
             </select>
           </div>
         </div>
@@ -84,16 +93,36 @@
       </div>
       
       <div class="form-group ">
-        <label style="color:#404040;" for="exampleFormControlTextarea1">Problem Description :</label>
-        <textarea style="background-color: #ebf9f9;" class="form-control" id="exampleFormControlTextarea1"
+        <label style="color:#404040;" for="exampleFormControlTextarea1">Product Description :</label>
+        <textarea [(ngModel)]="description" style="background-color: #fff;" class="form-control" id="exampleFormControlTextarea1"
           rows="3"></textarea>
       </div>
 
       <div style="width:100%; text-align: center;">
-        <button (click)="addproduct()" type="button" class="btn btn-primary  addproduct-btn mt-2">Add Product </button>
+        <button (click)="createCategory()" type="button" class="btn btn-primary  addproduct-btn mt-2">Add Product </button>
       </div>
     </div>
   </div>
 
+  <div *ngIf="catPopup" class="card" style="margin-top: 20px;" class="w3-container w3-center w3-animate-top" id="card">
+    <div class="row" >
+
+      <div class="col-12 ion-text-left " style="margin-top: 20px;">
+        <svg (click)="backToprivious()" style="color: black;margin-top:-8px;cursor:pointer" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+      </div>
+      <div class="col-12">
+        <h5 class="name  ion-text-center" style="color:#676767;" ><b>Type Your Category Name</b></h5>
+      </div>
+      <div class="col-12">
+        <input [(ngModel)]="categoryName" type="text">
+      </div>
+    </div>
+
+    <div style="width:100%; text-align: center;">
+      <button type="button" (click)="createCategory()" class="btn btn-primary  submit-btn mt-2">Submit</button>
+    </div>
+  </div>
 
 </ion-content>

@@ -62,6 +62,10 @@ export class SignupPage implements OnInit {
 
   navigateSigninPage()
   {
+    this.sellername =''
+    this.emailid =''
+    this.mobilenumber =''
+    this.password
     this.router.navigate(['/tabs'])
   }
   signinPage(){

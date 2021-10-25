@@ -3,7 +3,7 @@
     border-radius: 5px !important;
     width: 50%;
     height:35px;
-    background-color: darkturquoise;
+    background-color: #FF6000;
     border:1px solid #fff;
     margin:5px;
 }
@@ -14,10 +14,11 @@ img{
 }
 
 ion-content {
-    // background-color:#FFD833 !important;
-    background: linear-gradient(to bottom, #8cdbe2
-    0%, #d1f2e7
-    100%) !important;
+    background-color:#fff !important;
+    // background: linear-gradient(to bottom, #8cdbe2
+    // 0%, #d1f2e7
+    // 100%) !important;
+
     --offset-bottom: auto!important;
     --overflow: hidden;
     overflow: auto;

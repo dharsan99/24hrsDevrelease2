@@ -18,7 +18,7 @@ export class Tab2Page {
   plotSimplePieChart() {
     let myChart = HighCharts.chart('dynamicSpline', {
       chart: {
-        plotBackgroundColor: "#ebf9f9",
+        plotBackgroundColor: "#fff",
         plotBorderWidth: null ,
         plotShadow: false,
         type: 'pie',

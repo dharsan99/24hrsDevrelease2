@@ -1,10 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 .dot {
     margin:15px;
     margin-top: 0 !important;
     height: 80px;
     width: 70%;
-    background-color: turquoise
+    background-color: #FFC5A3
     ;
     border-radius: 50%;
     display: inline-block;
@@ -13,8 +13,9 @@
   .count{
       padding: 25px;
       text-align: center;
-      color: #5C5C5C;
+      color: #FF6000;
       font-size: 25px;
+      font-family: 'Quicksand', sans-serif !important;
   }
   .views{
       margin-top:  -10px !important;
@@ -23,13 +24,13 @@
   }
   .offer-btn{
     margin:15px;
-    background-color: darkturquoise
+    background-color: #FF6000
     ;
     border:1px solid #fff;
   }
   .myproducts-btn{
     margin:15px;
-    background-color:darkturquoise
+    background-color:#FF6000
     ;
     border:1px solid #fff;
     border-radius: 5px;
@@ -42,10 +43,11 @@
   }
 
   ion-content {
-    // background-color:#FFD833 !important;
-    background: linear-gradient(to bottom, darkturquoise
-    0%, #d1f2e7
-    100%) !important;
+    background-color:#fff !important;
+    // background: linear-gradient(to bottom, #fff
+    // 0%, #d1f2e7
+    // 100%) !important;
+
     --offset-bottom: auto!important;
     --overflow: hidden;
     overflow: auto;
@@ -54,8 +56,5 @@
     }
   }
 
-  .select-change{
-    transform: rotate(180deg);
-    background-color: red;
-  }
+
   

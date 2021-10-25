@@ -24,7 +24,7 @@ margin:8px;
     border-radius: 20px !important;
     width: 90%;
     height:35px;
-    background-color: darkturquoise;
+    background-color: #FF6000;
     color:#fff;
     border:1px solid #fff;
 }
@@ -47,10 +47,11 @@ ion-item{
     margin-top:95px;
 }
 ion-content {
-    // background-color:#FFD833 !important;
-    background: linear-gradient(to bottom, darkturquoise
-    0%, #d1f2e7
-    100%) !important;
+    background-color:#fff !important;
+    // background: linear-gradient(to bottom, darkturquoise
+    // 0%, #d1f2e7
+    // 100%) !important;
+
     --offset-bottom: auto!important;
     --overflow: hidden;
     overflow: auto;

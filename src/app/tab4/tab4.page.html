@@ -40,7 +40,7 @@
         <div class="col-4 mt-4">
           <img src="assets/onion.PNG" alt="">
           <h6 class="product-name">Onion</h6>
-          <ion-badge class="badge" style="color:#fff;background-color: #50C7C8;" slot="start">1KG</ion-badge>
+          <ion-badge class="badge" style="color:#fff;background-color: #FF6000;" slot="start">1KG</ion-badge>
         </div>
         <div class="col-8 mt-3">
           <h6>Number of views: <span> 10</span></h6>
@@ -87,7 +87,7 @@
         <div class="col-4 mt-4">
           <img src="assets/ginger.PNG" alt="">
           <h6 class="product-name">Ginger</h6>
-          <ion-badge class="badge" style="color:#fff;background-color: #50C7C8;" slot="start">1KG</ion-badge>
+          <ion-badge class="badge" style="color:#fff;background-color: #FF6000;" slot="start">1KG</ion-badge>
         </div>
         <div class="col-8 mt-3">
           <h6>Number of views: <span> 10</span></h6>
@@ -134,7 +134,7 @@
         <div class="col-4 mt-4">
           <img src="assets/onion.PNG" alt="">
           <h6 class="product-name">Onion</h6>
-          <ion-badge class="badge" style="color:#fff;background-color: #50C7C8;" slot="start">1KG</ion-badge>
+          <ion-badge class="badge" style="color:#fff;background-color: #FF6000;" slot="start">1KG</ion-badge>
         </div>
         <div class="col-8 mt-3">
           <h6>Number of views: <span> 10</span></h6>
@@ -181,7 +181,7 @@
         <div class="col-4 mt-4">
           <img src="assets/onion.PNG" alt="">
           <h6 class="product-name">Onion</h6>
-          <ion-badge class="badge" style="color:#fff;background-color: #50C7C8;" slot="start">1KG</ion-badge>
+          <ion-badge class="badge" style="color:#fff;background-color: #FF6000;" slot="start">1KG</ion-badge>
         </div>
         <div class="col-8 mt-3">
           <h6>Number of views: <span> 10</span></h6>
@@ -227,7 +227,6 @@
 
     <div *ngIf="isvisible" class="card" style="margin-top: 20px;" class="w3-container w3-center w3-animate-top" id="card">
       <div class="row" >
-
         <div class="col-12 ion-text-left " style="margin-top: 20px;">
           <svg (click)="confirm()" style="color: black;margin-top:-8px;cursor:pointer" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
@@ -240,7 +239,6 @@
         <div class="col-12">
           <div class="select" id="kg-dropdwon">
             <select>
-
               <option value="2">Grocery</option>
               <option value="3">Pharmacy</option>
               <option value="3">Vegetables</option>
@@ -258,7 +256,6 @@
         <div class="col-12">
           <div class="select" id="kg-dropdwon">
             <select>
-
               <option value="2">Grocery</option>
               <option value="3">Pharmacy</option>
               <option value="3">Vegetables</option>
@@ -274,7 +271,7 @@
           <p class="edit-name ion-text-left" style="color:#404040;" >Offer:</p>
         </div>
         <div class="col-6">
-          <input type="text" id="edit-field" value="10">
+          <input [(ngModel)]="cost" type="text"  placeholder="100" id="offer" >
         </div>
       </div>
 
@@ -283,7 +280,7 @@
           <p class="edit-name ion-text-left" style="color:#404040;" >Total Cost :</p>
         </div>
         <div class="col-6">
-          <input type="text" id="edit-field" value="130">
+          <input [(ngModel)]="cost" type="text"  placeholder="100" id="offer" >
         </div>
       </div>
 
@@ -307,7 +304,7 @@
 
       <div class="form-group mt-3 ion-text-center">
         <label for="exampleFormControlTextarea1" style="color:#404040;" > Description </label>
-        <textarea style="background-color: #ebf9f9;margin-top: 5px;" class="form-control" id="exampleFormControlTextarea1"
+        <textarea style="background-color: #fff;margin-top: 5px;" class="form-control" id="exampleFormControlTextarea1"
           rows="3"></textarea>
       </div>
 
@@ -315,5 +312,6 @@
         <button type="button" (click)="confirm()" class="btn btn-primary  confirm-btn mt-2">Confirm</button>
       </div>
     </div>
+    
   </div>
 </ion-content>

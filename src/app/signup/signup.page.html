@@ -4,45 +4,39 @@
   <div class="container">
   
     <div class="signin-div mt-5 " > 
-      <div>
-        <p style="margin:8px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-        </svg>
-        <span class="location"><b>Coimbatore, Tamilnadu</b></span></p>
-      </div>
-
       <p class="get-started mt-2"><b>Getting Started</b></p>
       <p class="create-account" >Create an account to continue!</p>
       <div class="input-field" >
         <ion-item>
           
           <ion-label position="floating">  <ion-icon name="mail"></ion-icon> EMAIL</ion-label>
-          <ion-input [(ngModel)]="emailid" ></ion-input>
+          <ion-input required [(ngModel)]="emailid" ></ion-input>
          
         </ion-item>
     
         <ion-item>
           <ion-label position="floating"> <ion-icon name="person"></ion-icon> USER NAME</ion-label>
-          <ion-input [(ngModel)]="sellername"></ion-input>
+          <ion-input required [(ngModel)]="sellername"></ion-input>
          
         </ion-item>
     
         <ion-item>
           <ion-label position="floating"> <ion-icon name="call"></ion-icon>MOBILE</ion-label>
-          <ion-input [(ngModel)]="mobilenumber" type="number"></ion-input>
+          <ion-input required [(ngModel)]="mobilenumber" type="number"></ion-input>
         </ion-item>
     
         <ion-item>
-          <ion-label position="floating"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
-            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+          <ion-label position="floating"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+            <path d="M7 6a1 1 0 0 1 2 0v1H7V6z"/>
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
           </svg> PASSWORD</ion-label>
-          <ion-input [(ngModel)]="password"> </ion-input>
+          <ion-input required [(ngModel)]="password"> </ion-input>
         </ion-item>   
       </div>
 
       <div class="row" >
  
-        <div class="col-1 tearmsAndCondition" style="margin-left: 14px;"><ion-checkbox  color="primary"></ion-checkbox></div>
+        <div class="col-1 tearmsAndCondition" style="margin-left: 14px;"><ion-checkbox  color="danger"></ion-checkbox></div>
         <div class="col-8" >
           <p class="tearmsAndCondition" >By creating an account, you agree to our
             <b> Terms & Conditions</b></p>

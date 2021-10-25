@@ -12,7 +12,7 @@
     border-radius: 5px !important;
     width: 50%;
     height:35px;
-    background-color: darkturquoise;
+    background-color: #FF6000;
     border:1px solid #fff;
     margin:5px;
     color: #fff;
@@ -26,13 +26,15 @@ input[type=text] {
     width: 90%;
     box-sizing: border-box;
     border: none;
-    background-color: #ebf9f9;
-    border-bottom: 2px solid #a6e4e9;
+    border-bottom: 2px solid #FF6000
+    ;
   }
+
 #offer:focus {
     outline: none !important;
-    border:1px solid #fff !important;
-    box-shadow: 0 0 2px #e9f3ff;
+    border:1px solid #e9f3ff !important;
+    box-shadow: 0 0 2px #8b8d91;
+   
   }
 
   #kg-dropdwon {
@@ -55,12 +57,40 @@ input[type=text] {
    
   
   }
+
+  select:required:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }
   
+  #card{
+    background-color: #fff;
+    border:1px solid #ebe6e6;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    width:96% !important;
+    margin:5px;
+  }
+  .submit-btn{
+    border-radius: 5px !important;
+    width: 50%;
+    height:35px;
+    background-color: #FF6000;
+    border:1px solid #fff;
+    color:#fff;
+    margin:5px;
+  }
+
 ion-content {
-    // background-color:#FFD833 !important;
-    background: linear-gradient(to bottom, darkturquoise
-    0%, #d1f2e7
-    100%) !important;
+    background-color:#fff !important;
+    // background: linear-gradient(to bottom, darkturquoise
+    // 0%, #d1f2e7
+    // 100%) !important;
     --offset-bottom: auto!important;
     --overflow: hidden;
     overflow: auto;

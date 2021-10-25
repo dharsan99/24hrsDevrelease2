@@ -1,6 +1,6 @@
 
 #dynamicSpline{
-    --background-color: #FFD833 !important;
+    --background-color: #fff !important;
     // width:370px;
     text-align: center;
     // position: flex;
@@ -8,8 +8,8 @@
 }
 
 .card{
-    background-color: #ebf9f9;
-    border:1px solid #fff;
+    background-color: #fff;
+    border:1px solid #ebe6e6;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px #ccc;
     width:96% !important;
@@ -28,10 +28,11 @@
     --border-color: #fff;
 }
 ion-content {
-  // background-color:#FFD833 !important;
-  background: linear-gradient(to bottom, darkturquoise
-  0%, #d1f2e7
-  100%) !important;
+  background-color:#fff !important;
+  // background: linear-gradient(to bottom, darkturquoise
+  // 0%, #d1f2e7
+  // 100%) !important;
+
   --offset-bottom: auto!important;
   --overflow: hidden;
   overflow: auto;

@@ -2,21 +2,21 @@
     color:#5C5C5C;
   }
 .myproduct-div{
-    background-color: #ebf9f9;
-    border:1px solid #fff;
+    background-color: #fff;
+    border:1px solid #ebe6e6;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px 2px #ebe6e6;
     width:96% !important;
     margin:5px;
     
   }
   .support-btn{
     border-radius: 5px !important;
-    background-color: darkturquoise;
+    background-color: #FF6000;
     height:25px;
     width:70%;
     text-align: center;
-    border:1px solid #fff;
+    border:1px solid #ebe6e6;
     font-size: 12px !important;
     padding: 3px;
     margin-top:18px !important;
@@ -50,7 +50,7 @@ input[type=text] {
     box-sizing: border-box;
     border: none;
     background-color: #ebf9f9;
-    border-bottom: 2px solid #a6e4e9;
+    border-bottom: 2px solid #FF6000;
   }
   input:focus {
     outline: none !important;
@@ -64,7 +64,8 @@ input[type=text] {
 
 .update-btn{
     border-radius: 5px !important;
-    background-color: darkturquoise;
+    background-color: #FF6000;
+    color:#fff;
     height:25px;
     width:50%;
     text-align: center;
@@ -74,11 +75,18 @@ input[type=text] {
     margin:15px !important;
 }
 
+ion-toggle {
+  --handle-box-shadow: 0 3px 12px rgba(255, 0, 0, 0.6), 0 3px 1px rgba(50, 70, 255, 0.6);
+
+  overflow: visible;
+
+  contain: none;
+}
 ion-content {
-    // background-color:#FFD833 !important;
-    background: linear-gradient(to bottom, darkturquoise
-    0%, #d1f2e7
-    100%) !important;
+    background-color:#fff !important;
+    // background: linear-gradient(to bottom, darkturquoise
+    // 0%, #d1f2e7
+    // 100%) !important;
     --offset-bottom: auto!important;
     --overflow: hidden;
     overflow: auto;

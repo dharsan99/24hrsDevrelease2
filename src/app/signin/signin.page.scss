@@ -1,5 +1,5 @@
 .signin-btn{
-    background-color: darkturquoise;
+    background-color: #FF6000;
     color:#fff;
 }
 ion-label{
@@ -9,12 +9,14 @@ ion-label{
 ion-item{
     --background: transparent !important;
 }
-
+ion-input:focus{
+    --border-bottom: 2px solid #FF6000 !important;
+}
 ion-content {
-    // background-color:#FFD833 !important;
-    background: linear-gradient(to bottom, darkturquoise
-    0%, #d1f2e7
-    100%) !important;
+    background-color:#fff !important;
+    // background: linear-gradient(to bottom, darkturquoise
+    // 0%, #d1f2e7
+    // 100%) !important;
     --offset-bottom: auto!important;
     --overflow: hidden;
     overflow: auto;

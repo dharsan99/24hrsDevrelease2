@@ -1,14 +1,14 @@
-<ion-menu  side="start" type="push" contentId="main">
+<ion-menu   side="start" type="push" contentId="main">
   <ion-toolbar>
     <div class="row mt-5">
-      <div class="col-5">
+      <div class="col-4">
         <ion-menu-button style="display: table-row;" >
           <ion-icon class="close"  name="close"></ion-icon>
         </ion-menu-button>
       </div>
-      <div class="col-4" style="margin-left: -50px;">
+      <div class="col-8" style="margin-left: -50px;">
         <ion-menu-button style="display: table-row;" >
-         <h1 style="color: #676767;"><b>24hrs </b></h1>
+          <img height="125px" width="155" src="assets/logo.png" alt="">
         </ion-menu-button>
         
       </div>
@@ -140,4 +140,4 @@
 </ion-content>
 </ion-menu>
 
-<ion-router-outlet id="main"></ion-router-outlet>
+<ion-router-outlet [swipeGesture]="false" id="main"></ion-router-outlet>

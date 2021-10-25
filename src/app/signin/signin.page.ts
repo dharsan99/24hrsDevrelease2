@@ -55,6 +55,8 @@ export class SigninPage implements OnInit {
 
   navigateTabs()
   {
+    this.signinemailid ='';
+    this.signinpassword ='';
     this.router.navigate(['/tabs'])
   }
 
