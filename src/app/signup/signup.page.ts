@@ -3,7 +3,7 @@ import { HttpService } from '../shared/http.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { ToastController } from '@ionic/angular';
-
+import validator from 'validator';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.page.html',
@@ -25,6 +25,11 @@ export class SignupPage implements OnInit {
   password:any = '';
 
   signup(){
+    console.log(validator.isEmail(this.emailid));
+    console.log(validator.isMobilePhone("'"+this.mobilenumber+"'" ,'en-IN','+91'));
+    
+    return false
+    
     const userData = {
       seller_name :  this.sellername,
       email_id :  this.emailid,

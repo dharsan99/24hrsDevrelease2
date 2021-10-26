@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { ModalComponent } from '../modal/modal.component';

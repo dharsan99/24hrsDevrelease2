@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 import { Router } from '@angular/router';
-
+import { HttpService } from '../shared/http.service';
 
 @Component({
   selector: 'app-tab1',
@@ -10,7 +10,14 @@ import { Router } from '@angular/router';
 })
 export class Tab1Page {
 
-  constructor(private router: Router,private menu: MenuController) {}
+  constructor(private http:HttpService,private router: Router,private menu: MenuController) {}
+
+  ngOnInit() {
+    this.list()
+  }
+
+  listOfCat:any =[];
+
   myproducts(){
     this.router.navigate(['/myproducts'])
   }
@@ -19,16 +26,16 @@ export class Tab1Page {
     this.router.navigate(['/tabs/tab4'])
   }
 
-  // selectedCar: number;
-
-  // cars = [
-  //     { id: 1, name: 'Volvo' },
-  //     { id: 2, name: 'Saab' },
-  //     { id: 3, name: 'Opel' },
-  //     { id: 4, name: 'Audi' },
-  // ];
-
-  select(){
+  list(){
+   
     
+    this.http.get('/read_category', ).subscribe((response: any) => {
+
+        console.log(response);
+        this.listOfCat = response.records
+    },(error: any) =>{
+      console.log(error);
+    }
+    );
   }
 }

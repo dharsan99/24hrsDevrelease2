@@ -6,18 +6,12 @@
     width:96% !important;
     margin:5px;
     -moz-box-shadow: 0 0 3px #ccc;
--webkit-box-shadow: 0 0 3px #ccc;
-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    border:1px solid #fff;
     
   }
-  .myproduct-div {
-    // background: linear-gradient(to bottom, #8cdbe2
-    // 0%, #d1f2e7
-    // 100%) !important;
-    background-color: #fff;
-    border:1px solid #fff;
-    box-shadow:none;
-  }
+
   img{
     margin-left: 10px !important;
     height:80px;

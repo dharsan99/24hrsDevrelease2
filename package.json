@@ -38,11 +38,15 @@
     "font-awesome": "^4.7.0",
     "highcharts": "^9.2.2",
     "ionic-angular": "^3.9.10",
+    "ionic-validate": "^1.0.1",
+    "ng-password-validator": "^1.2.2",
     "ng2-charts": "^2.4.3",
     "ng2-google-charts": "^6.1.0",
+    "password-validator": "^5.1.2",
     "rxjs": "~6.6.0",
     "sweetalert2": "^11.1.9",
     "tslib": "^2.2.0",
+    "validator": "^13.6.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
