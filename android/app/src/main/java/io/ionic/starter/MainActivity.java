@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.24hrs.seller;
 
 import com.getcapacitor.BridgeActivity;
 
