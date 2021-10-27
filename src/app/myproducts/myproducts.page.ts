@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-myproducts',
@@ -8,11 +9,31 @@ import { Router } from '@angular/router';
 })
 export class MyproductsPage implements OnInit {
 
-  constructor(private router: Router,) { }
+  constructor(private router: Router,private route: ActivatedRoute) {
+    route.params.subscribe(val => {
+      this.orderObj()
+      // put the code from `ngOnInit` here
+     
+    });
+   }
   exit(){
     this.router.navigate(['/tabs'])
   }
   ngOnInit() {
+
+    
+  }
+  productList:any = [];
+
+  orderObj(){
+    this.route.queryParams
+      
+      .subscribe(params => {
+        this.productList = params.order; 
+        console.log(this.productList);
+      }
+      
+      );
   }
 
 }

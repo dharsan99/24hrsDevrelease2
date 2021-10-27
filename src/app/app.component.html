@@ -8,7 +8,7 @@
       </div>
       <div class="col-8" style="margin-left: -50px;">
         <ion-menu-button style="display: table-row;" >
-          <img height="125px" width="155" src="assets/logo.jpeg" alt="">
+          <img class="mx-5" height="100px" width="100" style="text-align: center;" src="assets/logo.jpeg" alt="">
         </ion-menu-button>
         
       </div>
@@ -17,7 +17,7 @@
 
 <ion-content >
   
-  <ion-list >
+  <ion-list class="mt-4"  >
     <div class="row ">
       <div class="col-5">
         <ion-menu-button style="display: table-row; margin-left: 25%;" >
@@ -26,7 +26,7 @@
           </ion-item>
         </ion-menu-button>
       </div>
-      <div class="col-4" style="margin-left: 0px;">
+      <div class="col-4" style="margin-left: -30px;">
         <ion-menu-button style="display: table-row;" >
           <p class="list" (click)="home()">Home</p> 
         </ion-menu-button>
@@ -38,7 +38,7 @@
       <div class="col-5">
         <ion-menu-button style="display: table-row;" >
           <ion-item>
-            <img  height="50px" (click)="myproducts()" width="50px" src="assets/icon/myproduct.PNG" alt="">
+            <img  height="50px" (click)="myproducts()" width="50px" src="assets/icon/myproducts.png" alt="">
           </ion-item>
         </ion-menu-button>
       </div>
@@ -54,7 +54,7 @@
       <div class="col-5">
         <ion-menu-button style="display: table-row;" >
           <ion-item>
-            <img  height="50px" (click)="promotion()" width="50px" src="assets/icon/promotion.PNG" alt="">
+            <img  height="50px" (click)="promotion()" width="50px" src="assets/icon/promotion.png" alt="">
           </ion-item>
         </ion-menu-button>
       </div>
@@ -70,7 +70,7 @@
       <div class="col-5">
         <ion-menu-button style="display: table-row;" >
           <ion-item>
-            <img  height="50px" (click)="Offers()" width="50px" src="assets/icon/offers.PNG" alt="">
+            <img  height="50px" (click)="Offers()" width="50px" src="assets/icon/offers.png" alt="">
           </ion-item>
         </ion-menu-button>
       </div>
@@ -86,7 +86,7 @@
       <div class="col-5">
         <ion-menu-button style="display: table-row;" >
           <ion-item>
-            <img  height="50px" (click)="myprofile()" width="50px" src="assets/icon/myprofile.PNG" alt="">
+            <img  height="50px" (click)="myprofile()" width="50px" src="assets/icon/myprofile.png" alt="">
           </ion-item>
         </ion-menu-button>
       </div>
@@ -103,7 +103,7 @@
       <div class="col-5">
         <ion-menu-button style="display: table-row;" >
           <ion-item>
-            <img  height="50px" (click)="support()" width="50px" src="assets/icon/supporticon.PNG" alt="">
+            <img  height="50px" (click)="support()" width="50px" src="assets/icon/support.png" alt="">
           </ion-item>
         </ion-menu-button>
       </div>
@@ -119,16 +119,16 @@
       <div class="col-5">
         <ion-menu-button style="display: table-row;" >
           <ion-item>
-            <svg (click)="logout()" style="margin-left: 5px;" width="42" (click)="logout()" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.2" d="M20.8333 41.2938C32.3393 41.2938 41.6667 32.0499 41.6667 20.6469C41.6667 9.24393 32.3393 0 20.8333 0C9.3274 0 0 9.24393 0 20.6469C0 32.0499 9.3274 41.2938 20.8333 41.2938Z" fill="#29C17E"/>
-              <path d="M20.833 12.3882C20.833 12.9583 21.2952 13.4205 21.8654 13.4205H24.4788C26.4924 13.4205 28.1247 15.0528 28.1247 17.0664V24.2275C28.1247 26.2411 26.4924 27.8734 24.4788 27.8734H21.8654C21.2952 27.8734 20.833 28.3356 20.833 28.9057C20.833 29.4758 21.2952 29.938 21.8654 29.938H28.1247C28.6767 29.9364 29.2056 29.7182 29.596 29.3314C29.9863 28.9445 30.2064 28.4204 30.208 27.8734V13.4205C30.2064 12.8734 29.9863 12.3493 29.596 11.9625C29.2056 11.5756 28.6767 11.3575 28.1247 11.3558H21.8654C21.2952 11.3558 20.833 11.818 20.833 12.3882Z" fill="#29C17E"/>
-              <path d="M18.1256 21.6793C17.1395 21.6793 16.647 22.8726 17.346 23.5681L17.3963 23.6181C17.8035 24.0232 17.8028 24.6825 17.3948 25.0868C16.9914 25.4865 16.3413 25.4865 15.9379 25.0868L14.0856 23.2511C12.6383 21.8167 12.6383 19.4773 14.0856 18.0429L15.9379 16.2072C16.3413 15.8074 16.9914 15.8074 17.3948 16.2071C17.8028 16.6115 17.8035 17.2707 17.3963 17.6758L17.346 17.7258C16.647 18.4213 17.1395 19.6146 18.1256 19.6146H24.4882C25.0583 19.6146 25.5205 20.0768 25.5205 20.647C25.5205 21.2171 25.0583 21.6793 24.4882 21.6793H18.1256Z" fill="#29C17E"/>
-              </svg>
+            <img (click)="logout()" height="50px" (click)="logout()" width="50px" src="assets/icon/logout.png" alt="">
+            
           </ion-item>
         </ion-menu-button>
       </div>
       <div class="col-4" style="margin-left: -25px;">
-        <p style="cursor: pointer;" (click)="logout()" class="list">Log out </p>
+        <ion-menu-button style="display: table-row;" >
+          <p style="cursor: pointer;" (click)="logout()" class="list">Log out </p>
+        </ion-menu-button>
+       
       </div>
     </div>
     

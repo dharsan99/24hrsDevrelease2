@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { HttpService } from '../shared/http.service';
+import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-tab1',
@@ -10,30 +12,36 @@ import { HttpService } from '../shared/http.service';
 })
 export class Tab1Page {
 
-  constructor(private http:HttpService,private router: Router,private menu: MenuController) {}
+  constructor(private http: HttpService, private router: Router, private menu: MenuController) { }
 
   ngOnInit() {
     this.list()
   }
 
-  listOfCat:any =[];
+  listOfCat: any = [];
+  listOfProduct: any = [];
 
-  myproducts(){
-    this.router.navigate(['/myproducts'])
+  myproducts() {
+console.log(this.listOfProduct);
+
+    this.http.post('/read_product', '').subscribe((response: any) => { 
+      this.listOfProduct = response.records;
+        this.router.navigate(['/myproducts'],{ queryParams: { order: this.listOfProduct } })
+    }, (error: any) => {
+      console.log(error);
+    }
+    );
+
   }
 
-  offer(){
+  offer() {
     this.router.navigate(['/tabs/tab4'])
   }
 
-  list(){
-   
-    
-    this.http.get('/read_category', ).subscribe((response: any) => {
-
-        console.log(response);
-        this.listOfCat = response.records
-    },(error: any) =>{
+  list() {
+    this.http.get('/read_category',).subscribe((response: any) => {
+      this.listOfCat = response.records;
+    }, (error: any) => {
       console.log(error);
     }
     );
